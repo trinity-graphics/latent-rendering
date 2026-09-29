@@ -1,0 +1,16 @@
+scene_file: ./scenes/lamp/scene_alt.xml
+max_depth: 7
+
+decay: 0.5
+stopper_patience: 20
+stopper_min_delta: 0.001
+
+# Camera
+camera_max_x: -60
+# Light
+light_arg: emitter
+light_max_z: 20
+# Object
+object_arg: glasssphere
+object_max_x: -3
+object_max_z: -2

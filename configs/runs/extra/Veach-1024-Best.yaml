@@ -1,0 +1,4 @@
+__import__: [../../base.yaml, ../../scenes/veach.yaml]
+out_dir: ./Veach-1024-Best
+# move_all and convergence_ included for teaser and convergence figures
+experiments: [move_camera, move_object, move_light, move_all, convergence_best, convergence_novel_best]

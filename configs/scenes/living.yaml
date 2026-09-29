@@ -1,0 +1,15 @@
+scene_file: ./scenes/living-room-3/scene.xml
+max_depth: 65
+
+decay: 0.5
+
+# Camera
+camera_min_x: -20
+camera_max_x: 30
+# Light
+light_arg: light
+light_max_x: 25
+light_max_y: 3
+# Object
+object_arg: Cushions_0001
+object_max_x: -1.25

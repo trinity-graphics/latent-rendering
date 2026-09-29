@@ -1,0 +1,155 @@
+<scene version="3.0.0">
+	<default name="integrator" value="path" />
+	<default name="spp" value="64" />
+	<default name="res" value="1024" />
+	<default name="max_depth" value="7" />
+	<integrator type="$integrator">
+		<integer name="max_depth" value="$max_depth" />
+	</integrator>
+	<sensor type="perspective" id="sensor">
+		<float name="fov" value="35" />
+		<transform name="to_world">
+			<matrix value="-0.00500708 -0.00467005 -0.999977 12.2155 0 0.999989 -0.00467011 4.05167 0.999987 -2.34659e-005 -0.00502464 0.0114864 0 0 0 1" />
+		</transform>
+		<sampler type="multijitter">
+			<integer name="sample_count" value="$spp" />
+		</sampler>
+		<film type="hdrfilm">
+			<integer name="width" value="$res" />
+			<integer name="height" value="$res" />
+			<string name="file_format" value="openexr" />
+			<string name="pixel_format" value="rgb" />
+			<rfilter type="box" />
+		</film>
+	</sensor>
+	<bsdf type="twosided" id="DiffuseBSDF">
+		<bsdf type="diffuse">
+			<rgb name="reflectance" value="0.5, 0.5, 0.5" />
+		</bsdf>
+	</bsdf>
+	<bsdf type="dielectric" id="GlassBSDF">
+		<float name="int_ior" value="1.5" />
+		<float name="ext_ior" value="1" />
+	</bsdf>
+	<bsdf type="twosided" id="LampBSDF">
+		<bsdf type="roughconductor">
+			<float name="alpha" value="0.25" />
+			<string name="distribution" value="beckmann" />
+			<rgb name="specular_reflectance" value="1, 1, 1" />
+			<rgb name="eta" value="2.8656, 2.11918, 1.94008" />
+			<rgb name="k" value="3.03233, 2.05611, 1.61629" />
+		</bsdf>
+	</bsdf>
+	<bsdf type="twosided" id="WoodBSDF">
+		<bsdf type="diffuse">
+			<rgb name="reflectance" value="0.32963, 0.257976, 0.150292" />
+		</bsdf>
+	</bsdf>
+	<shape type="obj" id="Lamp_0001">
+		<string name="filename" value="models/Mesh007.obj" />
+		<transform name="to_world">
+			<matrix value="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" />
+		</transform>
+		<boolean name="face_normals" value="true" />
+		<ref id="LampBSDF" />
+	</shape>
+	<shape type="obj" id="Diffuse_0001">
+		<string name="filename" value="models/Mesh004.obj" />
+		<transform name="to_world">
+			<matrix value="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" />
+		</transform>
+		<boolean name="face_normals" value="true" />
+		<ref id="DiffuseBSDF" />
+	</shape>
+	<shape type="rectangle" id="Diffuse_0002">
+		<transform name="to_world">
+			<matrix value="-1.20536e-008 0.275755 1.20536e-008 -2.48161 0 -6.64767e-009 0.152081 6 0.275754 1.20536e-008 5.2688e-016 2.5894 0 0 0 1" />
+		</transform>
+		<ref id="DiffuseBSDF" />
+		<emitter type="area">
+			<rgb name="radiance" value="523.258, 523.258, 523.258" />
+		</emitter>
+	</shape>
+	<shape type="rectangle" id="Diffuse_0003">
+		<transform name="to_world">
+			<matrix value="-0.0101082 0.067068 0.00138972 -2.69082 -0.0610016 -0.0070995 -0.00842772 5.10417 -0.0282857 -0.00865658 0.0176788 -3.77057 0 0 0 1" />
+		</transform>
+		<ref id="DiffuseBSDF" />
+		<emitter type="area">
+			<rgb name="radiance" value="12048.2, 8605.84, 6196.21" />
+		</emitter>
+	</shape>
+	<shape type="obj" id="Lamp_0002">
+		<string name="filename" value="models/Mesh001.obj" />
+		<transform name="to_world">
+			<matrix value="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" />
+		</transform>
+		<ref id="LampBSDF" />
+	</shape>
+	<shape type="obj" id="Lamp_0003">
+		<string name="filename" value="models/Mesh005.obj" />
+		<transform name="to_world">
+			<matrix value="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" />
+		</transform>
+		<ref id="LampBSDF" />
+	</shape>
+	<shape type="obj" id="Diffuse_0004">
+		<string name="filename" value="models/Mesh008.obj" />
+		<transform name="to_world">
+			<matrix value="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" />
+		</transform>
+		<boolean name="face_normals" value="true" />
+		<ref id="DiffuseBSDF" />
+	</shape>
+	<shape type="obj" id="Glass">
+		<string name="filename" value="models/Mesh002.obj" />
+		<transform name="to_world">
+			<matrix value="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" />
+		</transform>
+		<ref id="GlassBSDF" />
+	</shape>
+	<shape type="obj" id="Diffuse_0005">
+		<string name="filename" value="models/Mesh011.obj" />
+		<transform name="to_world">
+			<matrix value="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" />
+		</transform>
+		<ref id="DiffuseBSDF" />
+	</shape>
+	<shape type="obj" id="Diffuse_0006">
+		<string name="filename" value="models/Mesh003.obj" />
+		<transform name="to_world">
+			<matrix value="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" />
+		</transform>
+		<ref id="DiffuseBSDF" />
+	</shape>
+	<shape type="obj" id="Diffuse_0007">
+		<string name="filename" value="models/Mesh009.obj" />
+		<transform name="to_world">
+			<matrix value="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" />
+		</transform>
+		<ref id="DiffuseBSDF" />
+	</shape>
+	<shape type="obj" id="Diffuse_0008">
+		<string name="filename" value="models/Mesh006.obj" />
+		<transform name="to_world">
+			<matrix value="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" />
+		</transform>
+		<ref id="DiffuseBSDF" />
+	</shape>
+	<shape type="obj" id="Wood">
+		<string name="filename" value="models/Mesh000.obj" />
+		<transform name="to_world">
+			<matrix value="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" />
+		</transform>
+		<boolean name="face_normals" value="true" />
+		<ref id="WoodBSDF" />
+	</shape>
+	<shape type="obj" id="Diffuse_0009">
+		<string name="filename" value="models/Mesh010.obj" />
+		<transform name="to_world">
+			<matrix value="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" />
+		</transform>
+		<boolean name="face_normals" value="true" />
+		<ref id="DiffuseBSDF" />
+	</shape>
+</scene>

@@ -1,0 +1,10 @@
+# Naive baseline
+negative_rendering: false
+seperate_term: false
+ambient_term: false
+occlusion_term: false
+post_logit: true
+
+lr_min: 0.00005
+lr_max: 0.0005
+train_refiner_saved: false

@@ -1,0 +1,4 @@
+__import__: _textured.yaml
+scene_file: ./scenes/classroom/scene.xml
+max_depth: 17
+object_arg: Whiteboard

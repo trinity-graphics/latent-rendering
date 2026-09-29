@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test Output Viewer</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #ccc;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    #controls {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    video {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      background: #000;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      display: block;
+    }
+
+    .video-row {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 20px;
+      justify-items: center;
+      width: 100%;
+    }
+
+    #error {
+      display: none;
+      color: #ff6b6b;
+      background: rgba(255, 0, 0, 0.08);
+      border: 1px solid rgba(255, 0, 0, 0.3);
+      padding: 10px 14px;
+      border-radius: 8px;
+      max-width: 900px;
+    }
+
+    .vid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .vid .label {
+      color: #aaa;
+      font-size: 14px;
+      margin-bottom: 6px;
+      max-width: 25vw;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Folder selector -->
+  <div id="controls">
+    <label for="expSelect">Experiment:</label>
+    <select id="expSelect"></select>
+  </div>
+  <!-- Error banner -->
+  <div id="error" role="alert"></div>
+
+  <!-- Video row: move_light -->
+  <div id="video-row" class="video-row">
+    <div class="vid"><div class="label">Rendered Latent</div><video controls autoplay loop muted></video></div>
+    <div class="vid"><div class="label">Processed Latent</div><video controls autoplay loop muted></video></div>
+    <div class="vid"><div class="label">Ambient Term</div><video controls autoplay loop muted></video></div>
+    <div class="vid"><div class="label">Refined Latent</div><video controls autoplay loop muted></video></div>
+    <div class="vid"><div class="label">Decoded Image</div><video controls autoplay loop muted></video></div>
+    <div class="vid"><div class="label">Reference Image</div><video controls autoplay loop muted></video></div>
+  </div>
+
+  <!-- Video row: move_camera -->
+  <div id="video-row-camera" class="video-row">
+    <div class="vid"><div class="label">Rendered Latent</div><video controls autoplay loop muted></video></div>
+    <div class="vid"><div class="label">Processed Latent</div><video controls autoplay loop muted></video></div>
+    <div class="vid"><div class="label">Ambient Term</div><video controls autoplay loop muted></video></div>
+    <div class="vid"><div class="label">Refined Latent</div><video controls autoplay loop muted></video></div>
+    <div class="vid"><div class="label">Decoded Image</div><video controls autoplay loop muted></video></div>
+    <div class="vid"><div class="label">Reference Image</div><video controls autoplay loop muted></video></div>
+  </div>
+
+  <script>
+    const select = document.getElementById('expSelect');
+    const videosLight = document.querySelectorAll('#video-row video');
+    const videosCamera = document.querySelectorAll('#video-row-camera video');
+    const errorEl = document.getElementById('error');
+
+    async function loadExperimentFolders() {
+      try {
+        const res = await fetch('/outputs/', { cache: 'no-store' });
+        const html = await res.text();
+
+        // Parse directory listing HTML
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        // VSCode Live Preview lists directories as <a href="foldername/">
+        const links = [...doc.querySelectorAll('a')];
+
+        const folders = links
+          .map(a => a.getAttribute('href'))
+          .filter(href => href && href.endsWith('/')) // Only directories
+          .map(href => {
+            // Extract last non-empty path segment (works for absolute and relative hrefs)
+            const segments = href.split('/').filter(Boolean);
+            return segments[segments.length - 1] || '';
+          })
+          .filter(name => name && !name.startsWith('.')); // Skip hidden/system dirs
+
+        // Populate dropdown
+        select.innerHTML = folders
+          .map(f => `<option value="${f}">${f}</option>`)
+          .join('');
+
+        if (folders.length > 0) {
+          updateVideos();
+        }
+      } catch (err) {
+        console.error("Failed to load experiment folders:", err);
+      }
+    }
+
+
+    async function updateVideos() {
+      const folder = select.value;
+
+      async function loadGroup(motion, nodeList) {
+        const base = `/outputs/${folder}/${motion}/`;
+        const filenames = [
+          `latent_processed.mp4`,
+          `latent_post_ambient.mp4`,
+          `latent_ambient.mp4`,
+          `latent_refined.mp4`,
+          `decoded_final.mp4`,
+          `best_rgb.mp4`,
+        ];
+
+        const missing = [];
+        const checks = await Promise.all(
+          filenames.map(async (name) => {
+            const url = base + name;
+            try {
+              const res = await fetch(url, { method: 'HEAD', cache: 'no-store' });
+              return { url, ok: res.ok, status: res.status };
+            } catch (e) {
+              return { url, ok: false, status: 'network' };
+            }
+          })
+        );
+
+        checks.forEach((chk, idx) => {
+          const v = nodeList[idx];
+          if (!v) return;
+          if (chk.ok) {
+            v.src = chk.url;
+            v.load();
+            v.play();
+          } else {
+            v.removeAttribute('src');
+            v.load();
+            const code = chk.status === 'network' ? 'network error' : `HTTP ${chk.status}`;
+            missing.push(`${chk.url} (${code})`);
+          }
+        });
+
+        return missing;
+      }
+
+      const [missingLight, missingCamera] = await Promise.all([
+        loadGroup('move_light', videosLight),
+        loadGroup('move_camera', videosCamera),
+      ]);
+
+      const allMissing = [...missingLight, ...missingCamera];
+      if (allMissing.length) {
+        errorEl.textContent = `Missing videos (some players cleared):\n- ` + allMissing.join('\n- ');
+        errorEl.style.display = 'block';
+      } else {
+        errorEl.textContent = '';
+        errorEl.style.display = 'none';
+      }
+
+      window._lastModified = null;
+    }
+
+    select.addEventListener('change', updateVideos);
+
+    setInterval(() => {
+      const allVideos = [
+        ...Array.from(videosLight),
+        ...Array.from(videosCamera),
+      ];
+      const sample = allVideos.find(v => v.src);
+      if (!sample || !sample.src) return;
+
+      fetch(sample.src, { cache: 'no-store' }).then(res => {
+        const lastModified = res.headers.get('last-modified');
+
+        if (lastModified && window._lastModified && lastModified !== window._lastModified) {
+          allVideos.forEach(v => {
+            v.load();
+            v.play();
+          });
+        }
+
+        window._lastModified = lastModified;
+      });
+    }, 3000);
+
+    // Start
+    loadExperimentFolders();
+  </script>
+</body>
+</html>

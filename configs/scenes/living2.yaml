@@ -1,0 +1,4 @@
+__import__: _textured.yaml
+scene_file: ./scenes/living-room-2/scene.xml
+max_depth: 33
+object_arg: TvScreen

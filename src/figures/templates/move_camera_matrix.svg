@@ -1,0 +1,446 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="187.47466mm" height="200.36mm"
+     viewBox="0 6.1 187.47465 200.36"
+     version="1.1" id="svg1" xml:space="preserve">
+  <sodipodi:namedview id="namedview1"
+     pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25"
+     inkscape:showpageshadow="2" inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" inkscape:current-layer="layer1" />
+  <!--
+    Coordinate system: layer transform translate(8.3023178, 123.0).
+    Column x positions (latent | large image):
+      Col 0: x_lat=-4.9347  | x_img=9.6844
+      Col 1: x_lat=40.3733  | x_img=54.9924
+      Col 2: x_lat=90.0071  | x_img=104.6262
+      Col 3: x_lat=135.3150 | x_img=149.9341
+    TOP HALF row y positions (top of large image):
+      Row 0 Rendering  (post_ambient) : -113.4946
+      Row 1 Refinement (final)        :  -81.5106
+      Row 2 Reference  (best_rgb)     :  -48.9947
+    BOTTOM HALF row y positions:
+      Row 0 Rendering  (post_ambient) :  -12.279
+      Row 1 Refinement (final)        :   19.605
+      Row 2 Reference  (best_rgb)     :   52.220
+    Layout (col order = left→right within each half):
+      TOP:    bed/f0 | bed/f59 | class/f0 | class/f59
+      BOTTOM: liv2/f0 | liv2/f59 | veach/f0 | veach/f59
+    All images: large 29.238x29.238, latent 14.619x14.619.
+    Latent ch14 sits 14.619mm below ch5 in y.
+    Metrics: use metrics_all.csv (has step col) for both f0 and f59.
+  -->
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1"
+     transform="translate(8.3023178,123.0)">
+
+    <!-- ================================================================ -->
+    <!-- TOP HALF: bedroom (f0, f59) | classroom (f0, f59)               -->
+    <!-- ================================================================ -->
+
+    <!-- Row labels top half -->
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="98.876" y="-6.332" id="label-rendering-top" transform="rotate(-90)">
+      <tspan sodipodi:role="line" x="98.876" y="-6.332">Rendering</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="66.892" y="-6.190" id="label-refinement-top" transform="rotate(-90)">
+      <tspan sodipodi:role="line" x="66.892" y="-6.190">Refinement</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="34.376" y="-6.218" id="label-reference-top" transform="rotate(-90)">
+      <tspan sodipodi:role="line" x="34.376" y="-6.218">Reference</tspan>
+    </text>
+
+    <!-- Column labels top half (y=-114.9) -->
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="16.994" y="-114.9" id="label-col0-top">
+      <tspan sodipodi:role="line" x="16.994" y="-114.9">Bedroom (frame 0)</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="62.302" y="-114.9" id="label-col1-top">
+      <tspan sodipodi:role="line" x="62.302" y="-114.9">Bedroom (frame 59)</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="111.936" y="-114.9" id="label-col2-top">
+      <tspan sodipodi:role="line" x="111.936" y="-114.9">Classroom (frame 0)</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="157.244" y="-114.9" id="label-col3-top">
+      <tspan sodipodi:role="line" x="157.244" y="-114.9">Classroom (frame 59)</tspan>
+    </text>
+
+    <!-- ===== Col 0: bedroom / frame 0 ===== -->
+    <image preserveAspectRatio="none" xlink:href="runs/bedroom/move_camera/0/post_ambient.png"
+           id="img-bed0-pa" x="9.6844" y="-113.4946" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/bedroom/move_camera/0/latent_postambient/ch5.png"
+           id="img-bed0-pa-ch5" x="-4.9347" y="-113.4946" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/bedroom/move_camera/0/latent_postambient/ch14.png"
+           id="img-bed0-pa-ch14" x="-4.9347" y="-98.8756" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="runs/bedroom/move_camera/0/final.png"
+           id="img-bed0-fi" x="9.6844" y="-81.5106" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/bedroom/move_camera/0/refined/ch5.png"
+           id="img-bed0-fi-ch5" x="-4.9347" y="-81.5106" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/bedroom/move_camera/0/refined/ch14.png"
+           id="img-bed0-fi-ch14" x="-4.9347" y="-66.8916" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="runs/bedroom/move_camera/0/best_rgb.png"
+           id="img-bed0-gt" x="9.6844" y="-48.9947" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/bedroom/move_camera/0/latent_ref/ch5.png"
+           id="img-bed0-gt-ch5" x="-4.9347" y="-48.9947" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/bedroom/move_camera/0/latent_ref/ch14.png"
+           id="img-bed0-gt-ch14" x="-4.9347" y="-34.3757" width="14.619" height="14.619" />
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="24.3034" y="-82.2648" id="metric-bed0-pre">
+      <tspan sodipodi:role="line" x="24.3034" y="-82.2648"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-bed0-pre-lpips">{bedroom_move_camera_pre_lpips_f0} /</tspan>
+      <tspan sodipodi:role="line" x="24.3034" y="-80.6773"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-bed0-pre-mse">{bedroom_move_camera_pre_msex100_f0}</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="24.3034" y="-50.2541" id="metric-bed0-final">
+      <tspan sodipodi:role="line" x="24.3034" y="-50.2541"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-bed0-final-lpips">{bedroom_move_camera_final_lpips_f0} /</tspan>
+      <tspan sodipodi:role="line" x="24.3034" y="-48.6666"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-bed0-final-mse">{bedroom_move_camera_final_msex100_f0}</tspan>
+    </text>
+
+    <!-- ===== Col 1: bedroom / frame 59 ===== -->
+    <image preserveAspectRatio="none" xlink:href="runs/bedroom/move_camera/59/post_ambient.png"
+           id="img-bed59-pa" x="54.9924" y="-113.4946" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/bedroom/move_camera/59/latent_postambient/ch5.png"
+           id="img-bed59-pa-ch5" x="40.3733" y="-113.4946" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/bedroom/move_camera/59/latent_postambient/ch14.png"
+           id="img-bed59-pa-ch14" x="40.3733" y="-98.8756" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="runs/bedroom/move_camera/59/final.png"
+           id="img-bed59-fi" x="54.9924" y="-81.5106" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/bedroom/move_camera/59/refined/ch5.png"
+           id="img-bed59-fi-ch5" x="40.3733" y="-81.5106" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/bedroom/move_camera/59/refined/ch14.png"
+           id="img-bed59-fi-ch14" x="40.3733" y="-66.8916" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="runs/bedroom/move_camera/59/best_rgb.png"
+           id="img-bed59-gt" x="54.9924" y="-48.9947" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/bedroom/move_camera/59/latent_ref/ch5.png"
+           id="img-bed59-gt-ch5" x="40.3733" y="-48.9947" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/bedroom/move_camera/59/latent_ref/ch14.png"
+           id="img-bed59-gt-ch14" x="40.3733" y="-34.3757" width="14.619" height="14.619" />
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="69.6114" y="-82.2648" id="metric-bed59-pre">
+      <tspan sodipodi:role="line" x="69.6114" y="-82.2648"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-bed59-pre-lpips">{bedroom_move_camera_pre_lpips_f59} /</tspan>
+      <tspan sodipodi:role="line" x="69.6114" y="-80.6773"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-bed59-pre-mse">{bedroom_move_camera_pre_msex100_f59}</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="69.6114" y="-50.2541" id="metric-bed59-final">
+      <tspan sodipodi:role="line" x="69.6114" y="-50.2541"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-bed59-final-lpips">{bedroom_move_camera_final_lpips_f59} /</tspan>
+      <tspan sodipodi:role="line" x="69.6114" y="-48.6666"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-bed59-final-mse">{bedroom_move_camera_final_msex100_f59}</tspan>
+    </text>
+
+    <!-- ===== Col 2: classroom / frame 0 ===== -->
+    <image preserveAspectRatio="none" xlink:href="runs/classroom/move_camera/0/post_ambient.png"
+           id="img-cls0-pa" x="104.6262" y="-113.4946" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/classroom/move_camera/0/latent_postambient/ch5.png"
+           id="img-cls0-pa-ch5" x="90.0071" y="-113.4946" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/classroom/move_camera/0/latent_postambient/ch14.png"
+           id="img-cls0-pa-ch14" x="90.0071" y="-98.8756" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="runs/classroom/move_camera/0/final.png"
+           id="img-cls0-fi" x="104.6262" y="-81.5106" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/classroom/move_camera/0/refined/ch5.png"
+           id="img-cls0-fi-ch5" x="90.0071" y="-81.5106" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/classroom/move_camera/0/refined/ch14.png"
+           id="img-cls0-fi-ch14" x="90.0071" y="-66.8916" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="runs/classroom/move_camera/0/best_rgb.png"
+           id="img-cls0-gt" x="104.6262" y="-48.9947" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/classroom/move_camera/0/latent_ref/ch5.png"
+           id="img-cls0-gt-ch5" x="90.0071" y="-48.9947" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/classroom/move_camera/0/latent_ref/ch14.png"
+           id="img-cls0-gt-ch14" x="90.0071" y="-34.3757" width="14.619" height="14.619" />
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="119.2452" y="-82.2648" id="metric-cls0-pre">
+      <tspan sodipodi:role="line" x="119.2452" y="-82.2648"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-cls0-pre-lpips">{classroom_move_camera_pre_lpips_f0} /</tspan>
+      <tspan sodipodi:role="line" x="119.2452" y="-80.6773"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-cls0-pre-mse">{classroom_move_camera_pre_msex100_f0}</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="119.2452" y="-50.2541" id="metric-cls0-final">
+      <tspan sodipodi:role="line" x="119.2452" y="-50.2541"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-cls0-final-lpips">{classroom_move_camera_final_lpips_f0} /</tspan>
+      <tspan sodipodi:role="line" x="119.2452" y="-48.6666"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-cls0-final-mse">{classroom_move_camera_final_msex100_f0}</tspan>
+    </text>
+
+    <!-- ===== Col 3: classroom / frame 59 ===== -->
+    <image preserveAspectRatio="none" xlink:href="runs/classroom/move_camera/59/post_ambient.png"
+           id="img-cls59-pa" x="149.9341" y="-113.4946" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/classroom/move_camera/59/latent_postambient/ch5.png"
+           id="img-cls59-pa-ch5" x="135.3150" y="-113.4946" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/classroom/move_camera/59/latent_postambient/ch14.png"
+           id="img-cls59-pa-ch14" x="135.3150" y="-98.8756" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="runs/classroom/move_camera/59/final.png"
+           id="img-cls59-fi" x="149.9341" y="-81.5106" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/classroom/move_camera/59/refined/ch5.png"
+           id="img-cls59-fi-ch5" x="135.3150" y="-81.5106" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/classroom/move_camera/59/refined/ch14.png"
+           id="img-cls59-fi-ch14" x="135.3150" y="-66.8916" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="runs/classroom/move_camera/59/best_rgb.png"
+           id="img-cls59-gt" x="149.9341" y="-48.9947" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/classroom/move_camera/59/latent_ref/ch5.png"
+           id="img-cls59-gt-ch5" x="135.3150" y="-48.9947" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/classroom/move_camera/59/latent_ref/ch14.png"
+           id="img-cls59-gt-ch14" x="135.3150" y="-34.3757" width="14.619" height="14.619" />
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="164.5531" y="-82.2648" id="metric-cls59-pre">
+      <tspan sodipodi:role="line" x="164.5531" y="-82.2648"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-cls59-pre-lpips">{classroom_move_camera_pre_lpips_f59} /</tspan>
+      <tspan sodipodi:role="line" x="164.5531" y="-80.6773"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-cls59-pre-mse">{classroom_move_camera_pre_msex100_f59}</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="164.5531" y="-50.2541" id="metric-cls59-final">
+      <tspan sodipodi:role="line" x="164.5531" y="-50.2541"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-cls59-final-lpips">{classroom_move_camera_final_lpips_f59} /</tspan>
+      <tspan sodipodi:role="line" x="164.5531" y="-48.6666"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-cls59-final-mse">{classroom_move_camera_final_msex100_f59}</tspan>
+    </text>
+
+    <!-- ================================================================ -->
+    <!-- BOTTOM HALF: living2 (f0, f59) | veach (f0, f59)               -->
+    <!-- ================================================================ -->
+
+    <!-- Row labels bottom half -->
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="-2.340" y="-6.332" id="label-rendering-bot" transform="rotate(-90)">
+      <tspan sodipodi:role="line" x="-2.340" y="-6.332">Rendering</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="-34.224" y="-6.190" id="label-refinement-bot" transform="rotate(-90)">
+      <tspan sodipodi:role="line" x="-34.224" y="-6.190">Refinement</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="-66.839" y="-6.218" id="label-reference-bot" transform="rotate(-90)">
+      <tspan sodipodi:role="line" x="-66.839" y="-6.218">Reference</tspan>
+    </text>
+
+    <!-- Column labels bottom half (y=-13.68) -->
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="16.994" y="-13.68" id="label-col0-bot">
+      <tspan sodipodi:role="line" x="16.994" y="-13.68">Living Room 2 (frame 0)</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="62.302" y="-13.68" id="label-col1-bot">
+      <tspan sodipodi:role="line" x="62.302" y="-13.68">Living Room 2 (frame 59)</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="111.936" y="-13.68" id="label-col2-bot">
+      <tspan sodipodi:role="line" x="111.936" y="-13.68">Veach Bidir (frame 0)</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="157.244" y="-13.68" id="label-col3-bot">
+      <tspan sodipodi:role="line" x="157.244" y="-13.68">Veach Bidir (frame 59)</tspan>
+    </text>
+
+    <!-- ===== Col 0: living2 / frame 0 ===== -->
+    <image preserveAspectRatio="none" xlink:href="runs/living2/move_camera/0/post_ambient.png"
+           id="img-liv0-pa" x="9.6844" y="-12.279" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/living2/move_camera/0/latent_postambient/ch5.png"
+           id="img-liv0-pa-ch5" x="-4.9347" y="-12.279" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/living2/move_camera/0/latent_postambient/ch14.png"
+           id="img-liv0-pa-ch14" x="-4.9347" y="2.340" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="runs/living2/move_camera/0/final.png"
+           id="img-liv0-fi" x="9.6844" y="19.605" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/living2/move_camera/0/refined/ch5.png"
+           id="img-liv0-fi-ch5" x="-4.9347" y="19.605" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/living2/move_camera/0/refined/ch14.png"
+           id="img-liv0-fi-ch14" x="-4.9347" y="34.224" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="runs/living2/move_camera/0/best_rgb.png"
+           id="img-liv0-gt" x="9.6844" y="52.220" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/living2/move_camera/0/latent_ref/ch5.png"
+           id="img-liv0-gt-ch5" x="-4.9347" y="52.220" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/living2/move_camera/0/latent_ref/ch14.png"
+           id="img-liv0-gt-ch14" x="-4.9347" y="66.839" width="14.619" height="14.619" />
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="24.3034" y="18.951" id="metric-liv0-pre">
+      <tspan sodipodi:role="line" x="24.3034" y="18.951"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-liv0-pre-lpips">{living2_move_camera_pre_lpips_f0} /</tspan>
+      <tspan sodipodi:role="line" x="24.3034" y="20.539"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-liv0-pre-mse">{living2_move_camera_pre_msex100_f0}</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="24.3034" y="50.961" id="metric-liv0-final">
+      <tspan sodipodi:role="line" x="24.3034" y="50.961"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-liv0-final-lpips">{living2_move_camera_final_lpips_f0} /</tspan>
+      <tspan sodipodi:role="line" x="24.3034" y="52.549"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-liv0-final-mse">{living2_move_camera_final_msex100_f0}</tspan>
+    </text>
+
+    <!-- ===== Col 1: living2 / frame 59 ===== -->
+    <image preserveAspectRatio="none" xlink:href="runs/living2/move_camera/59/post_ambient.png"
+           id="img-liv59-pa" x="54.9924" y="-12.279" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/living2/move_camera/59/latent_postambient/ch5.png"
+           id="img-liv59-pa-ch5" x="40.3733" y="-12.279" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/living2/move_camera/59/latent_postambient/ch14.png"
+           id="img-liv59-pa-ch14" x="40.3733" y="2.340" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="runs/living2/move_camera/59/final.png"
+           id="img-liv59-fi" x="54.9924" y="19.605" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/living2/move_camera/59/refined/ch5.png"
+           id="img-liv59-fi-ch5" x="40.3733" y="19.605" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/living2/move_camera/59/refined/ch14.png"
+           id="img-liv59-fi-ch14" x="40.3733" y="34.224" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="runs/living2/move_camera/59/best_rgb.png"
+           id="img-liv59-gt" x="54.9924" y="52.220" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/living2/move_camera/59/latent_ref/ch5.png"
+           id="img-liv59-gt-ch5" x="40.3733" y="52.220" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/living2/move_camera/59/latent_ref/ch14.png"
+           id="img-liv59-gt-ch14" x="40.3733" y="66.839" width="14.619" height="14.619" />
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="69.6114" y="18.951" id="metric-liv59-pre">
+      <tspan sodipodi:role="line" x="69.6114" y="18.951"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-liv59-pre-lpips">{living2_move_camera_pre_lpips_f59} /</tspan>
+      <tspan sodipodi:role="line" x="69.6114" y="20.539"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-liv59-pre-mse">{living2_move_camera_pre_msex100_f59}</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="69.6114" y="50.961" id="metric-liv59-final">
+      <tspan sodipodi:role="line" x="69.6114" y="50.961"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-liv59-final-lpips">{living2_move_camera_final_lpips_f59} /</tspan>
+      <tspan sodipodi:role="line" x="69.6114" y="52.549"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-liv59-final-mse">{living2_move_camera_final_msex100_f59}</tspan>
+    </text>
+
+    <!-- ===== Col 2: veach / frame 0 ===== -->
+    <image preserveAspectRatio="none" xlink:href="runs/veach/move_camera/0/post_ambient.png"
+           id="img-veach0-pa" x="104.6262" y="-12.279" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/veach/move_camera/0/latent_postambient/ch5.png"
+           id="img-veach0-pa-ch5" x="90.0071" y="-12.279" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/veach/move_camera/0/latent_postambient/ch14.png"
+           id="img-veach0-pa-ch14" x="90.0071" y="2.340" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="runs/veach/move_camera/0/final.png"
+           id="img-veach0-fi" x="104.6262" y="19.605" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/veach/move_camera/0/refined/ch5.png"
+           id="img-veach0-fi-ch5" x="90.0071" y="19.605" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/veach/move_camera/0/refined/ch14.png"
+           id="img-veach0-fi-ch14" x="90.0071" y="34.224" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="runs/veach/move_camera/0/best_rgb.png"
+           id="img-veach0-gt" x="104.6262" y="52.220" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/veach/move_camera/0/latent_ref/ch5.png"
+           id="img-veach0-gt-ch5" x="90.0071" y="52.220" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/veach/move_camera/0/latent_ref/ch14.png"
+           id="img-veach0-gt-ch14" x="90.0071" y="66.839" width="14.619" height="14.619" />
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="119.2452" y="18.951" id="metric-veach0-pre">
+      <tspan sodipodi:role="line" x="119.2452" y="18.951"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-veach0-pre-lpips">{veach_move_camera_pre_lpips_f0} /</tspan>
+      <tspan sodipodi:role="line" x="119.2452" y="20.539"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-veach0-pre-mse">{veach_move_camera_pre_msex100_f0}</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="119.2452" y="50.961" id="metric-veach0-final">
+      <tspan sodipodi:role="line" x="119.2452" y="50.961"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-veach0-final-lpips">{veach_move_camera_final_lpips_f0} /</tspan>
+      <tspan sodipodi:role="line" x="119.2452" y="52.549"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-veach0-final-mse">{veach_move_camera_final_msex100_f0}</tspan>
+    </text>
+
+    <!-- ===== Col 3: veach / frame 59 ===== -->
+    <image preserveAspectRatio="none" xlink:href="runs/veach/move_camera/59/post_ambient.png"
+           id="img-veach59-pa" x="149.9341" y="-12.279" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/veach/move_camera/59/latent_postambient/ch5.png"
+           id="img-veach59-pa-ch5" x="135.3150" y="-12.279" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/veach/move_camera/59/latent_postambient/ch14.png"
+           id="img-veach59-pa-ch14" x="135.3150" y="2.340" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="runs/veach/move_camera/59/final.png"
+           id="img-veach59-fi" x="149.9341" y="19.605" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/veach/move_camera/59/refined/ch5.png"
+           id="img-veach59-fi-ch5" x="135.3150" y="19.605" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/veach/move_camera/59/refined/ch14.png"
+           id="img-veach59-fi-ch14" x="135.3150" y="34.224" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="runs/veach/move_camera/59/best_rgb.png"
+           id="img-veach59-gt" x="149.9341" y="52.220" width="29.238" height="29.238" />
+    <image preserveAspectRatio="none" xlink:href="latents/veach/move_camera/59/latent_ref/ch5.png"
+           id="img-veach59-gt-ch5" x="135.3150" y="52.220" width="14.619" height="14.619" />
+    <image preserveAspectRatio="none" xlink:href="latents/veach/move_camera/59/latent_ref/ch14.png"
+           id="img-veach59-gt-ch14" x="135.3150" y="66.839" width="14.619" height="14.619" />
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="164.5531" y="18.951" id="metric-veach59-pre">
+      <tspan sodipodi:role="line" x="164.5531" y="18.951"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-veach59-pre-lpips">{veach_move_camera_pre_lpips_f59} /</tspan>
+      <tspan sodipodi:role="line" x="164.5531" y="20.539"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-veach59-pre-mse">{veach_move_camera_pre_msex100_f59}</tspan>
+    </text>
+    <text xml:space="preserve"
+          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+          x="164.5531" y="50.961" id="metric-veach59-final">
+      <tspan sodipodi:role="line" x="164.5531" y="50.961"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-veach59-final-lpips">{veach_move_camera_final_lpips_f59} /</tspan>
+      <tspan sodipodi:role="line" x="164.5531" y="52.549"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0583px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10"
+             id="metric-veach59-final-mse">{veach_move_camera_final_msex100_f59}</tspan>
+    </text>
+
+  </g>
+</svg>

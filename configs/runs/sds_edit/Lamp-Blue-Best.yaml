@@ -1,0 +1,3 @@
+__import__: ../ablation/Lamp-1024-Best.yaml
+out_dir: ./Lamp-Aug/Lamp-Blue-Best
+scene_file: ./scenes/lamp/scene_alt_blue.xml

@@ -1,0 +1,2 @@
+__import__: ../ablation/Lamp-1024-Best.yaml
+out_dir: ./Lamp-Aug/Lamp-Red-Best

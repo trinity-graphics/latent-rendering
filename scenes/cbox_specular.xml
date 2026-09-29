@@ -1,0 +1,150 @@
+<scene version="3.0.0">
+    <default name="spp" value="144"/>
+    <default name="res" value="256"/>
+    <default name="max_depth" value="6"/>
+    <default name="integrator" value="path"/>
+
+    <integrator type='$integrator'>
+        <integer name="max_depth" value="$max_depth"/>
+    </integrator>
+
+    <sensor type="perspective" id="sensor">
+        <string name="fov_axis" value="smaller"/>
+        <float name="near_clip" value="0.001"/>
+        <float name="far_clip" value="100.0"/>
+        <!-- <float name="focus_distance" value="1000"/> -->
+        <float name="fov" value="39.3077"/>
+        <transform name="to_world">
+            <lookat origin="0,  0,  3.8"
+                    target="0,  0,  0"
+                    up    ="0,  1,  0"/>
+        </transform>
+        <sampler type="multijitter">
+            <integer name="sample_count" value="$spp"/>
+        </sampler>
+        <film type="hdrfilm">
+            <integer name="width"  value="$res"/>
+            <integer name="height" value="$res"/>
+            <rfilter type="box"/>
+            <string name="pixel_format" value="rgb"/>          
+            <string name="component_format" value="float32"/>  
+        </film>
+        <!-- <film type="specfilm">
+            <integer name="width"  value="$res"/>
+            <integer name="height" value="$res"/>
+            <spectrum name="band1_red" filename="spds/0.spd" />
+            <spectrum name="band2_green" filename="spds/1.spd" />
+            <spectrum name="band3_blue" filename="spds/2.spd" />
+            <spectrum name="band4_lea" filename="spds/3.spd" />
+        </film> -->
+        <!-- MOVE TO BOX FILTER, IT WILL BE MUCH SHARPER! -->
+        <!-- THE GRADIENTS WORK IFF THE LOSS IS LINEAR, WHICH IS NOT THE CASE WITH DECODING. -->
+        <!-- VARIANCE REDUCTION TECHNIQUES -->
+    </sensor>
+
+    <!-- BSDFs -->
+
+    <!-- <bsdf type="diffuse" id="gray">
+        <rgb name="reflectance" value="0.85, 0.85, 0.85"/>
+        <spectrum name="reflectance" filename="spds/r.spd"/>
+    </bsdf> -->
+
+    <bsdf type="diffuse" id="white_0">
+        <rgb name="reflectance" value="0.885809, 0.698859, 0.666422"/>
+    </bsdf>
+
+    <bsdf type="diffuse" id="white_1">
+        <rgb name="reflectance" value="0.885809, 0.698859, 0.666422"/>
+    </bsdf>
+
+    <bsdf type="diffuse" id="white_2">
+        <rgb name="reflectance" value="0.885809, 0.698859, 0.666422"/>
+    </bsdf>
+
+    <bsdf type="diffuse" id="white_3">
+        <rgb name="reflectance" value="0.885809, 0.698859, 0.666422"/>
+    </bsdf>
+
+    <bsdf type="diffuse" id="white_4">
+        <rgb name="reflectance" value="0.885809, 0.698859, 0.666422"/>
+    </bsdf>
+
+    <bsdf type="diffuse" id="green">
+        <rgb name="reflectance" value="0.105421, 0.37798, 0.076425"/>
+    </bsdf>
+
+    <!-- <bsdf type="my_bsdf" id="red"> -->
+    <bsdf type="diffuse" id="red">
+        <rgb name="reflectance" value="0.570068, 0.0430135, 0.0443706"/>
+    </bsdf>
+
+    <!-- <bsdf type="conductor" id="mirror"/> -->
+    <bsdf type="conductor" id="mirror">
+        <rgb name="specular_reflectance" value="1.0"/>
+    </bsdf>
+    <!-- Light -->
+
+    <shape type="obj" id="light">
+        <string name="filename" value="meshes/cbox_luminaire.obj"/>
+        <transform name="to_world">
+            <translate x="0" y="-0.01" z="0"/>
+        </transform>
+        <ref id="white_0"/>
+        <emitter type="area">
+            <rgb name="radiance" value="18.387, 13.9873, 6.75357"/>
+        </emitter>
+    </shape>
+
+    <!-- <emitter type="my_point" id="light"> -->
+    <!-- <emitter type="point" id="light">
+        <point name="position" x="0" y="0.8" z="0"/>
+        <rgb name="intensity" value="1.0"/>
+    </emitter> -->
+
+    <!-- Shapes -->
+
+    <shape type="obj" id="floor">
+        <string name="filename" value="meshes/cbox_floor.obj"/>
+        <ref id="white_1"/>
+    </shape>
+
+    <shape type="obj" id="ceiling">
+        <string name="filename" value="meshes/cbox_ceiling.obj"/>
+        <ref id="white_2"/>
+    </shape>
+
+    <shape type="obj" id="back">
+        <string name="filename" value="meshes/cbox_back.obj"/>
+        <ref id="white_3"/>
+    </shape>
+
+    <shape type="obj" id="greenwall">
+        <string name="filename" value="meshes/cbox_greenwall.obj"/>
+        <ref id="green"/>
+    </shape>
+
+    <shape type="obj" id="redwall">
+        <string name="filename" value="meshes/cbox_redwall.obj"/>
+        <ref id="red"/>
+    </shape>
+
+    <shape type="sphere" id="mirrorsphere">
+        <transform name="to_world">
+            <scale value="0.5"/>
+            <translate x="-0.3" y="-0.5" z="0.2"/>
+        </transform>
+        <ref id="mirror"/>
+    </shape>
+
+    <shape type="sphere" id="glasssphere">
+        <transform name="to_world">
+            <scale value="0.25"/>
+            <translate x="0.5" y="-0.75" z="-0.2"/>
+        </transform>
+        <ref id="white_4"/>
+    </shape>
+
+    <emitter type="constant" id="miss">
+        <rgb name="radiance" value="0.001, 0.001, 0.001"/>
+    </emitter>
+</scene>

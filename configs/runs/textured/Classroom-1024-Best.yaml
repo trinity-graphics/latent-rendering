@@ -1,0 +1,2 @@
+__import__: [../../base.yaml, ../../scenes/classroom.yaml]
+out_dir: ./Classroom-1024-Best

@@ -1,0 +1,2 @@
+__import__: [../../base.yaml, ../../scenes/living.yaml, ../../methods/no_occ.yaml]
+out_dir: ./Living-1024-NoOcc

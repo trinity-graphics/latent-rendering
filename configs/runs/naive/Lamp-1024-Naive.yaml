@@ -1,0 +1,2 @@
+__import__: [../../base.yaml, ../../scenes/lamp.yaml, ../../methods/naive.yaml]
+out_dir: ./Lamp-1024-Naive

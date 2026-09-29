@@ -1,0 +1,2 @@
+__import__: [../ablation/Lamp-1024-NoOcc.yaml, ../../vaes/flux2.yaml, _study.yaml]
+out_dir: ./VAE/Flux-Lamp-NoOcc

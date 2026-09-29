@@ -1,0 +1,7 @@
+# Signed rendering only (no ambient or occlusion terms)
+ambient_term: false
+occlusion_term: false
+use_refiner: false
+
+lr_min: 0.00005
+lr_max: 0.0005

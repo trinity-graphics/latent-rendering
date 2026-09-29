@@ -1,0 +1,74 @@
+# Optional features set to their off/default values.
+
+# Use spectral rendering (for use with standard mitsuba3, when our custom modifications are not available)
+custom_mitsuba: true
+generate_spd: true
+generate_spd_gap: 4
+uniform_spd: true
+irregular_spec: true
+
+# Dataset-driven training
+dataset_training: false
+dataset: indirect_denoised
+dataset_early_stop: false
+
+# Multi-view / random-view
+move_mode: camera
+x_views: 1
+x_range: 60
+y_views: 1
+y_range: 60
+random_pos: false
+
+# Set to false for joint scene parameter / refiner parameter training
+multi_stage: true
+
+# Split BSDF, emitter and ambient terms into (positive - negative) pairs
+split_terms: false
+
+# Split latent channels into +/- halves, doubling the rendered channel count
+split_channels: false
+additive_join_channels: false
+
+# Latent post-processing
+clip_rendered: false
+clip_processed: false
+offset_mode: none
+normalize: false
+scaling_mode: channel
+invert: false
+pre_sigmoid: false
+
+# Loss target
+loss_target: latent
+
+# Additional loss terms and targets
+KL_loss_1: false
+hard_loss_1: false
+power_loss_1: false
+Gaussian_loss_1: false
+NLL_loss_1: false
+SSIM_loss_1: false
+LPIPS_loss_1: false
+KL_loss_2: false
+hard_loss_2: false
+power_loss_2: false
+Gaussian_loss_2: false
+NLL_loss_2: false
+SSIM_loss_2: false
+LPIPS_loss_2: false
+loss1_denoised_latent: false
+loss1_blurred: false
+loss1_blur_ksize: 3
+train_on_dist_samples: false
+sample_every_it: false
+
+# Skip the clipped ambient warm-up in scene optimization
+quick_scene_optim: false
+
+# Refiner variants
+pre_edge_conv: false
+per_layer_residuals: false
+depthwise_residuals: false
+downsample_aovs: false
+conditioning_mode: concat

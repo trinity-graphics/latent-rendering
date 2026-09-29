@@ -1,0 +1,5 @@
+__import__: ../ablation/Lamp-1024-Best.yaml
+out_dir: ./Lamp-1024-ShuffleRef
+scene_dir: ./Lamp-1024-Best
+augment_channel_shuffle: true
+experiments: [move_camera]

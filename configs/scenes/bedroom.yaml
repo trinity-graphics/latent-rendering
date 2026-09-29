@@ -1,0 +1,4 @@
+__import__: _textured.yaml
+scene_file: ./scenes/bedroom/scene.xml
+max_depth: 65
+object_arg: Mirror_0001

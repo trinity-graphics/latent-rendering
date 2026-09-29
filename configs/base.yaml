@@ -1,0 +1,89 @@
+# Defaults for every run
+__import__: disabled.yaml
+
+# General
+model_id: stabilityai/stable-diffusion-3.5-medium
+# float, half
+dtype: float
+
+# Debug outputs (<out_dir>/debug)
+debug_metrics: true
+debug_metric_steps: 50
+debug_images: true
+debug_image_steps: 500
+
+# Rendering
+image_resolution: 1024
+# RGB reference renders
+samples_per_pixel: 3969
+denoise_references: true
+samples_per_pixel_latents: 1024
+samples_per_pixel_latents_training: 256
+# clip, reinhard
+ref_tone_map: clip
+tone_map: clip
+post_logit: false
+duplicate_bsdfs: false
+
+# Method
+negative_rendering: true
+seperate_term: true
+ambient_term: true
+occlusion_term: true
+
+# Test experiments; translations set in scene configs
+experiments: [move_camera, move_object, move_light]
+time_forward: false
+
+# Training
+num_its: 6000
+# Split percentage between scene/refiner optimization
+stage_split: 0.5
+# Refiner learning rate
+lr: 0.0005
+loss1_weight: 1
+# huber, mse
+loss1_type: huber
+loss2_type: mse
+# Train the refiner on renders cached after scene optimization
+train_refiner_saved: true
+augment_channel_shuffle: false
+
+# Scene optimization LR schedule
+lr_min: 0.0005
+lr_max: 0.001
+warmup: 100
+cycle_len: 500
+decay: 0.8
+vanishing_factor: 1000
+
+# Early stopper
+stopper_patience: 30
+stopper_min_delta: 0.01
+stopper_stag_eps: 0.0001
+
+# Refiner
+use_refiner: true
+refiner_train_renders: 1
+refiner_kernels: [3, 5, 3]
+# inplace, batchnorm, identity, layernorm, instancenorm
+refiner_normalization: instancenorm
+refiner_activation: relu
+expand_ratio: 16
+use_aovs: true
+aovs_list: nn:sh_normal,dd:depth
+samples_per_pixel_aovs: 256
+
+# SDS losses, used by notebooks/sds_edit.ipynb
+sds_lr: 0.01
+sds_start: 200
+sds_stop: 300
+sds_min_ts: 0.02
+sds_max_ts: 0.98
+sds_guidance_weight: 100
+
+# WandB
+log: false
+log_steps: 10
+team: null
+project: latent

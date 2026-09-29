@@ -1,0 +1,2 @@
+__import__: [../../base.yaml, ../../scenes/cbox.yaml]
+out_dir: ./CBox-1024-Best

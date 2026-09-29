@@ -1,0 +1,4 @@
+# Shared by the VAE study runs; unlike the main ablation, the term ablations also train a refiner.
+use_refiner: true
+# The VAE table and figure only use novel views
+experiments: [move_camera]

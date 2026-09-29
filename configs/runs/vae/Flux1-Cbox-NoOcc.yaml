@@ -1,0 +1,2 @@
+__import__: [../ablation/CBox-1024-NoOcc.yaml, ../../vaes/flux1.yaml, _study.yaml]
+out_dir: ./VAE/Flux1-Cbox-NoOcc

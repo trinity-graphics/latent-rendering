@@ -1,0 +1,2 @@
+__import__: [../../base.yaml, ../../scenes/living2.yaml]
+out_dir: ./Living2-1024-Best

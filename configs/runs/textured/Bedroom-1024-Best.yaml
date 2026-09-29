@@ -1,0 +1,2 @@
+__import__: [../../base.yaml, ../../scenes/bedroom.yaml]
+out_dir: ./Bedroom-1024-Best

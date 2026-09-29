@@ -1,0 +1,19 @@
+scene_file: ./scenes/veach-bidir/scene.xml
+max_depth: 7
+duplicate_bsdfs: true
+ref_tone_map: reinhard
+tone_map: reinhard
+
+# Camera
+camera_max_x: 16
+camera_max_y: 12
+# Light
+light_arg: Diffuse_0002
+light_max_z: -8.6666666666
+light_object_arg: Lamp_0001
+light_object_0_arg: Lamp_0002
+light_object_max_y: -1.3333333333
+# Object
+object_arg: Glass
+object_min_z: 1
+object_max_z: -1.7

@@ -1,0 +1,2 @@
+__import__: [../../base.yaml, ../../scenes/dining.yaml]
+out_dir: ./Dining-1024-Best

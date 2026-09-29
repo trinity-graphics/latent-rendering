@@ -1,0 +1,2 @@
+__import__: [../ablation/CBox-1024-Best.yaml, ../../vaes/qwen.yaml, _study.yaml]
+out_dir: ./VAE/Qwen-Cbox

@@ -1,0 +1,3 @@
+[submodule "mitsuba3-latent"]
+	path = mitsuba3-latent
+	url = https://github.com/trinity-graphics/latent-rendering-mitsuba3.git

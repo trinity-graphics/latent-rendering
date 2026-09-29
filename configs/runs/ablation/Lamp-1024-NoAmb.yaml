@@ -1,0 +1,2 @@
+__import__: [../../base.yaml, ../../scenes/lamp.yaml, ../../methods/no_amb.yaml]
+out_dir: ./Lamp-1024-NoAmb

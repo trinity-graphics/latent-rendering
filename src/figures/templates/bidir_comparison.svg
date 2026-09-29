@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" width="88.585823mm" height="90.597717mm" viewBox="0 0 88.585822 90.597717" version="1.1" id="svg1" xml:space="preserve" inkscape:version="1.4.3 (0d15f75042, 2025-12-25)" sodipodi:docname="matrix-egsr-bidir-v1.updated.svg" inkscape:export-filename="matrix-v3.png" inkscape:export-xdpi="300" inkscape:export-ydpi="300">
+  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:document-units="mm" showguides="true" inkscape:zoom="2.1000001" inkscape:cx="199.28571" inkscape:cy="171.42856" inkscape:window-width="1920" inkscape:window-height="1043" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="layer1">
+    <sodipodi:guide position="4.4710444,210.04695" orientation="0,-1" id="guide18" inkscape:locked="false" />
+    <sodipodi:guide position="2.3407703e-07,27.242592" orientation="1,0" id="guide20" inkscape:locked="false" />
+    <sodipodi:guide position="179.24389,28.629592" orientation="1,0" id="guide21" inkscape:locked="false" />
+    <sodipodi:guide position="3.3407703e-07,210.04695" orientation="0,-1" id="guide23" inkscape:locked="false" />
+    <sodipodi:guide position="1.134077e-06,184.51449" orientation="0,-1" id="guide24" inkscape:locked="false" />
+    <sodipodi:guide position="88.58583,210.04695" orientation="1,0" id="guide28" inkscape:locked="false" />
+    <sodipodi:guide position="90.658105,210.04695" orientation="1,0" id="guide29" inkscape:locked="false" />
+    <sodipodi:guide position="119.84107,210.04695" orientation="1,0" id="guide30" inkscape:locked="false" />
+    <sodipodi:guide position="120.35749,210.04695" orientation="1,0" id="guide31" inkscape:locked="false" />
+    <sodipodi:guide position="149.54248,210.04695" orientation="1,0" id="guide32" inkscape:locked="false" />
+    <sodipodi:guide position="150.06092,210.04695" orientation="1,0" id="guide33" inkscape:locked="false" />
+    <sodipodi:guide position="3.3407703e-07,190.59164" orientation="0,-1" id="guide34" inkscape:locked="false" />
+    <sodipodi:guide position="3.3407703e-07,200.3193" orientation="0,-1" id="guide35" inkscape:locked="false" />
+    <sodipodi:guide position="2.234077e-06,132.05999" orientation="0,-1" id="guide36" inkscape:locked="false" />
+    <sodipodi:guide position="3.3407703e-07,157.59245" orientation="0,-1" id="guide39" inkscape:locked="false" />
+    <sodipodi:guide position="3.3407703e-07,147.86479" orientation="0,-1" id="guide40" inkscape:locked="false" />
+    <sodipodi:guide position="3.3407703e-07,138.13714" orientation="0,-1" id="guide41" inkscape:locked="false" />
+    <sodipodi:guide position="100.38576,138.13714" orientation="1,0" id="guide45" inkscape:locked="false" />
+    <sodipodi:guide position="130.08717,138.13714" orientation="1,0" id="guide46" inkscape:locked="false" />
+    <sodipodi:guide position="157.78857,165.05918" orientation="1,0" id="guide47" inkscape:locked="false" />
+    <sodipodi:guide position="1.134077e-06,165.05918" orientation="0,-1" id="guide60" inkscape:locked="false" />
+    <sodipodi:guide position="1.134077e-06,174.78684" orientation="0,-1" id="guide61" inkscape:locked="false" />
+    <sodipodi:guide position="-3.4189222e-11,102.82256" orientation="0,-1" id="guide3" inkscape:locked="false" />
+    <sodipodi:guide position="3.749847,67.456964" orientation="1,0" id="guide4" inkscape:locked="false" />
+    <sodipodi:guide position="45.844617,67.456964" orientation="1,0" id="guide5" inkscape:locked="false" />
+    <sodipodi:guide position="3.749847,67.456964" orientation="0,-1" id="guide6" inkscape:locked="false" />
+    <sodipodi:guide position="3.749847,69.97842" orientation="0,-1" id="guide7" inkscape:locked="false" />
+    <sodipodi:guide position="-9.9286452,96.986116" orientation="0,-1" id="guide8" inkscape:locked="false" />
+    <sodipodi:guide position="17.781426,67.456964" orientation="1,0" id="guide9" inkscape:locked="false" />
+    <sodipodi:guide position="46.491069,69.978422" orientation="1,0" id="guide10" inkscape:locked="false" />
+    <sodipodi:guide position="38.383654,100.96418" orientation="0,-1" id="guide11" inkscape:locked="false" />
+    <sodipodi:guide position="48.099292,10.366463" orientation="0,-1" id="guide12" inkscape:locked="false" />
+    <sodipodi:guide position="3.749847,40.449266" orientation="0,-1" id="guide13" inkscape:locked="false" />
+    <sodipodi:guide position="3.7498422,37.9278" orientation="0,-1" id="guide14" inkscape:locked="false" />
+    <sodipodi:guide position="3.7498422,10.9201" orientation="0,-1" id="guide15" inkscape:locked="false" />
+    <sodipodi:guide position="46.491069,73.115804" orientation="0,-1" id="guide16" inkscape:locked="false" />
+    <sodipodi:guide position="46.368617,43.586667" orientation="0,-1" id="guide17" inkscape:locked="false" />
+    <sodipodi:guide position="46.49108,14.057485" orientation="0,-1" id="guide19" inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs id="defs1">
+    <rect x="-110.63295" y="53.967293" width="110.63297" height="686.32947" id="rect21" />
+    <rect x="101.12569" y="-14.31024" width="79.421829" height="14.31024" id="rect7" />
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath115">
+      <path d="M -8.803205e-7,8.8032049e-6 H 853.00001 V 1033 H -8.803205e-7 Z" clip-rule="evenodd" id="path115" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath116">
+      <path d="M 69.074667,496.08132 H 392.06312 V 104.93588 H 69.074667 Z" id="path116" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath117">
+      <path d="M 1.2837462e-8,1.8686948e-8 H 0.73944688 V 1.0000001 H 1.2837462e-8 Z" clip-rule="evenodd" id="path117" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath118">
+      <path d="M 69.074667,496.08132 H 392.06312 V 104.93588 H 69.074667 Z" id="path118" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath119">
+      <path d="M 0,2.5609928e-8 H 1.0000001 V 1.0000001 H 0 Z" clip-rule="evenodd" id="path119" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath120">
+      <path d="M 69.074667,104.93588 H 199.33026 v 130.2556 H 69.074667 Z" id="path120" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath121">
+      <path d="M -0.25346134,-25.301781 H 245.18658 V 10.218225 H -0.25346134 Z" id="path121" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath122">
+      <path d="M 69.074667,104.93588 H 392.0631 V 496.08132 H 69.074667 Z" clip-rule="evenodd" id="path122" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath123">
+      <path d="M 69.074667,496.08132 H 392.06312 V 104.93588 H 69.074667 Z" id="path123" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath124">
+      <path d="M 1.2837462e-8,2.5570713e-8 H 0.73944688 V 1.0000001 H 1.2837462e-8 Z" clip-rule="evenodd" id="path124" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath125">
+      <path d="M 69.074667,496.08132 H 392.06312 V 104.93588 H 69.074667 Z" id="path125" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath126">
+      <path d="M 0.50019057,1.8686948e-8 H 1.0009184 V 1.0000001 H 0.50019057 Z" clip-rule="evenodd" id="path126" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath127">
+      <path d="M 69.074667,496.08132 H 392.06312 V 104.93588 H 69.074667 Z" id="path127" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath128">
+      <path d="M -0.0538292,-0.14782373 H 497.71653 V 256.26109 H -0.0538292 Z" id="path128" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath129">
+      <path d="M 69.085503,384.86371 H 169.19663 v 51.53524 H 69.085503 Z" clip-rule="evenodd" id="path129" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath130">
+      <path d="M -55.718751,-73.000002 H 208.28125 V 62.999999 H -55.718751 Z" clip-rule="evenodd" id="path130" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath131">
+      <path d="M 69.074667,496.08132 H 392.06312 V 104.93588 H 69.074667 Z" id="path131" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath132">
+      <path d="M -226.47452,-713.23463 H 626.52549 V 319.76539 h -853.00001 z" clip-rule="evenodd" id="path132" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath133">
+      <path d="M 69.074667,496.08132 H 392.06312 V 104.93588 H 69.074667 Z" id="path133" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath134">
+      <path d="M -0.11630828,-0.14782373 H 497.65405 V 256.26109 H -0.11630828 Z" id="path134" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath135">
+      <path d="m 180.3303,384.86371 h 100.11114 v 51.53524 H 180.3303 Z" clip-rule="evenodd" id="path135" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath136">
+      <path d="M -41.265629,-73.000002 H 222.73437 V 62.999999 H -41.265629 Z" clip-rule="evenodd" id="path136" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath137">
+      <path d="M 69.074667,496.08132 H 392.06312 V 104.93588 H 69.074667 Z" id="path137" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath138">
+      <path d="M -0.28649709,-0.14782373 H 497.48386 V 256.26109 H -0.28649709 Z" id="path138" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath139">
+      <path d="m 291.57678,384.86371 h 100.11114 v 51.53524 H 291.57678 Z" clip-rule="evenodd" id="path139" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath140">
+      <path d="M -80.07812,-73.000002 H 183.92192 V 62.999999 H -80.07812 Z" clip-rule="evenodd" id="path140" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath141">
+      <path d="M 69.074667,496.08132 H 392.06312 V 104.93588 H 69.074667 Z" id="path141" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath142">
+      <path d="M -1.6558247e-6,-0.11506065 H 497.77036 V 256.29385 H -1.6558247e-6 Z" id="path142" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath143">
+      <path d="M 69.074667,444.3506 H 169.1858 v 51.53524 H 69.074667 Z" clip-rule="evenodd" id="path143" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath144">
+      <path d="M -54.875002,-72.999992 H 209.125 V 63.00001 H -54.875002 Z" clip-rule="evenodd" id="path144" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath145">
+      <path d="M 69.074667,496.08132 H 392.06312 V 104.93588 H 69.074667 Z" id="path145" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath146">
+      <path d="M -0.06246086,-0.4912472 H 497.7079 V 256.51957 H -0.06246086 Z" id="path146" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath147">
+      <path d="m 180.31946,443.21465 h 100.11112 v 51.53524 H 180.31946 Z" clip-rule="evenodd" id="path147" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath148">
+      <path d="M -53.968738,-72.999992 H 210.03126 V 63.00001 H -53.968738 Z" clip-rule="evenodd" id="path148" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath149">
+      <path d="M 69.074667,496.08132 H 392.06312 V 104.93588 H 69.074667 Z" id="path149" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath150">
+      <path d="M -0.2326,-0.4912472 H 497.53776 V 256.51957 H -0.2326 Z" id="path150" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath151">
+      <path d="m 291.58574,443.21465 h 100.11112 v 51.53524 H 291.58574 Z" clip-rule="evenodd" id="path151" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath152">
+      <path d="M -35.265638,-72.999992 H 228.73436 V 63.00001 H -35.265638 Z" clip-rule="evenodd" id="path152" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath153">
+      <path d="M 69.074667,496.08132 H 392.06312 V 104.93588 H 69.074667 Z" id="path153" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath154">
+      <path d="M -0.12614572,-0.49757637 H 1514.7682 V 256.21635 H -0.12614572 Z" id="path154" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath155">
+      <path d="M 69.085503,213.06048 H 199.20134 v 21.99125 H 69.085503 Z" clip-rule="evenodd" id="path155" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath156">
+      <path d="M 69.074667,213.01773 H 199.33026 v 22.05258 H 69.074667 Z" id="path156" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath157">
+      <path d="M 69.074667,104.93588 H 392.0631 V 496.08132 H 69.074667 Z" clip-rule="evenodd" id="path157" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath117-9">
+      <path d="M -9.5004663e-7,-1.1335196e-5 H 1932 V 1020 H -9.5004663e-7 Z" clip-rule="evenodd" id="path117-1" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath118-3">
+      <path d="M 69.074667,544.69467 H 746.93619 V 186.81747 H 69.074667 Z" id="path118-8" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath119-8">
+      <path d="M -0.0510322,-6.2211478e-6 H 256.01325 V 256.2399 H -0.0510322 Z" id="path119-9" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath120-4">
+      <path d="M 583.2154,186.81748 H 746.87158 V 350.56554 H 583.2154 Z" clip-rule="evenodd" id="path120-3" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath121-9">
+      <path d="M -132.35737,-237.99999 H 333.64062 V 229 h -465.99999 z" clip-rule="evenodd" id="path121-5" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath122-1">
+      <path d="M 69.074667,544.69467 H 746.93619 V 186.81747 H 69.074667 Z" id="path122-7" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath123-4">
+      <path d="M 0,-1.8400362e-8 H 1 V 1 H 0 Z" clip-rule="evenodd" id="path123-5" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath124-1">
+      <path d="M 69.074667,544.69467 H 746.93619 V 186.81747 H 69.074667 Z" id="path124-4" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath125-6">
+      <path d="M -2.1791381e-8,-1.255524e-8 H 1 V 1 H -2.1791381e-8 Z" clip-rule="evenodd" id="path125-0" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath126-3">
+      <path d="M 69.074667,544.69467 H 746.93619 V 186.81747 H 69.074667 Z" id="path126-2" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath127-2">
+      <path d="M 0,0.50084187 H 0.99999999 V 1.0003194 H 0 Z" clip-rule="evenodd" id="path127-1" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath128-4">
+      <path d="M 69.074667,544.69467 H 746.93619 V 186.81747 H 69.074667 Z" id="path128-7" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath129-7">
+      <path d="M 1.2169578e-8,-2.4324455e-8 H 1 V 1 H 1.2169578e-8 Z" clip-rule="evenodd" id="path129-0" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath130-9">
+      <path d="M 69.074667,544.69467 H 746.93619 V 186.81747 H 69.074667 Z" id="path130-5" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath131-7">
+      <path d="M 0,-2.7902685e-8 H 0.99976749 V 0.49636553 H 0 Z" clip-rule="evenodd" id="path131-2" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath132-9">
+      <path d="M 69.074667,544.69467 H 746.93619 V 186.81747 H 69.074667 Z" id="path132-7" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath133-6">
+      <path d="M -1.5431719e-8,-2.4324455e-8 H 1 V 1 H -1.5431719e-8 Z" clip-rule="evenodd" id="path133-8" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath134-2">
+      <path d="M 69.074667,544.69467 H 746.93619 V 186.81747 H 69.074667 Z" id="path134-9" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath135-9">
+      <path d="M -128.67889,-496.23351 H 1803.3211 V 523.76648 H -128.67889 Z" clip-rule="evenodd" id="path135-8" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath136-3">
+      <path d="M 69.074667,544.69467 H 746.93619 V 186.81747 H 69.074667 Z" id="path136-7" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath137-1">
+      <path d="M -1581.7886,523.76649 H 350.21148 V -496.23354 H -1581.7886 Z" id="path137-2" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath138-6">
+      <path d="M -692.95853,523.76649 H 1239.0415 V -496.23354 H -692.95853 Z" id="path138-1" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath139-7">
+      <path d="M -1146.8735,523.76649 H 785.12656 V -496.23354 H -1146.8735 Z" id="path139-6" />
+    </clipPath>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath140-5">
+      <path d="M -26.346405,28.060384 H 1905.6537 V -991.93964 H -26.346405 Z" id="path140-0" />
+    </clipPath>
+  </defs>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(0.0432471,114.59637)">
+    <rect style="fill:#ffffff;stroke-width:0.189455;stroke-linejoin:round;stroke-miterlimit:10" id="rect3" width="88.585823" height="90.597717" x="-0.0432471" y="-114.59637" />
+    <image width="28.185593" height="27.007694" preserveAspectRatio="none" xlink:href="runs/veach/move_object/57/final.png" id="image1-52" x="60.356991" y="-81.089157" />
+    <image width="28.063175" height="27.007694" preserveAspectRatio="none" xlink:href="runs/veach/move_camera/57/final.png" id="image1-39" x="17.738195" y="-81.089149" />
+    <text xml:space="preserve" transform="scale(0.26458333)" id="text7" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect7);display:inline;fill:#ffffff;stroke:#000000;stroke-width:0.755706;stroke-linejoin:round;stroke-miterlimit:10" />
+    <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10" x="67.647522" y="-111.54354" id="text118-5-2"><tspan sodipodi:role="line" x="67.647522" y="-111.54354" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10" id="tspan11-6-4">Object motion (frame 57)</tspan></text>
+    <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10" x="25.179932" y="-111.81858" id="text118-5-2-2"><tspan sodipodi:role="line" x="25.179932" y="-111.81858" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10" id="tspan11-6-4-7">Novel view rendering (frame 57)</tspan></text>
+    <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.15763px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" x="32.676067" y="-83.293396" id="text118-5-2-2-2-9" transform="scale(1.0193531,0.98101433)"><tspan sodipodi:role="line" x="32.676067" y="-83.2934" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0788px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" id="tspan11-6-4-7-7-9">{veach_move_camera_pre_lpips_f57} /</tspan><tspan sodipodi:role="line" x="32.676067" y="-81.6752" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0788px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" id="tspan11-6-4-7-7-9-2">{veach_move_camera_pre_msex100_f57}</tspan></text>
+    <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.15763px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" x="75.58783" y="-83.27002" id="text118-5-2-2-2-4-9" transform="scale(1.0193531,0.98101433)"><tspan sodipodi:role="line" x="75.58783" y="-83.27" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0788px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" id="tspan11-6-4-7-7-5-1">{veach_move_object_pre_lpips_f57} /</tspan><tspan sodipodi:role="line" x="75.58783" y="-81.6518" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0788px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" id="tspan11-6-4-7-7-5-1-2">{veach_move_object_pre_msex100_f57}</tspan></text>
+    <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.15763px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" x="32.864719" y="-53.192764" id="text118-5-2-2-2-9-3" transform="scale(1.0193531,0.98101433)"><tspan sodipodi:role="line" x="32.864719" y="-53.1928" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0788px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" id="tspan11-6-4-7-7-9-6">{veach_move_camera_final_lpips_f57} /</tspan><tspan sodipodi:role="line" x="32.864719" y="-51.5745" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0788px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" id="tspan11-6-4-7-7-9-6-2">{veach_move_camera_final_msex100_f57}</tspan></text>
+    <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.15763px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" x="75.776482" y="-53.169388" id="text118-5-2-2-2-4-9-0" transform="scale(1.0193531,0.98101433)"><tspan sodipodi:role="line" x="75.776482" y="-53.1694" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0788px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" id="tspan11-6-4-7-7-5-1-6">{veach_move_object_final_lpips_f57} /</tspan><tspan sodipodi:role="line" x="75.776482" y="-51.5512" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.0788px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" id="tspan11-6-4-7-7-5-1-6-2">{veach_move_object_final_msex100_f57}</tspan></text>
+    <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:0.568266;stroke:none;stroke-width:0.2;stroke-linejoin:round;stroke-miterlimit:10" x="31.615194" y="69.603935" id="text119"><tspan sodipodi:role="line" id="tspan119" x="31.615194" y="69.603935" style="stroke-width:0.2" /></text>
+    <text xml:space="preserve" transform="matrix(0.26458333,0,0,0.26458333,-1.1172312,-116.52641)" id="text21" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect21);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.755706;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <image width="28.063166" height="27.007687" preserveAspectRatio="none" xlink:href="runs/veach/move_object/57/best_rgb.png" id="image1" x="60.479416" y="-51.559975" />
+    <image width="28.063175" height="27.007694" preserveAspectRatio="none" xlink:href="runs/veach/move_object/57/post_ambient.png" id="image1-8" x="60.479412" y="-110.6183" />
+    <image width="14.031582" height="13.503838" preserveAspectRatio="none" xlink:href="latents/veach/move_object/57/latent_ref/ch5.png" id="image1-2" x="46.447834" y="-51.559975" />
+    <image width="14.031582" height="13.503849" preserveAspectRatio="none" xlink:href="latents/veach/move_object/57/latent_ref/ch14.png" id="image1-274" x="46.447834" y="-38.056137" />
+    <image width="14.03159" height="13.503845" preserveAspectRatio="none" xlink:href="latents/veach/move_object/57/latent_postambient/ch5.png" id="image1-1" x="46.447823" y="-110.6183" />
+    <image width="14.03159" height="13.503849" preserveAspectRatio="none" xlink:href="latents/veach/move_object/57/latent_postambient/ch14.png" id="image1-0" x="46.447823" y="-97.114456" />
+    <image width="14.03162" height="13.503838" preserveAspectRatio="none" xlink:href="latents/veach/move_object/57/refined/ch5.png" id="image1-146" x="46.325371" y="-81.089157" />
+    <image width="14.03162" height="13.503857" preserveAspectRatio="none" xlink:href="latents/veach/move_object/57/refined/ch14.png" id="image1-69" x="46.325371" y="-67.58532" />
+    <image width="28.063175" height="27.007694" preserveAspectRatio="none" xlink:href="runs/veach/move_camera/57/best_rgb.png" id="image1-024" x="17.738195" y="-51.559986" />
+    <image width="14.031607" height="13.503841" preserveAspectRatio="none" xlink:href="latents/veach/move_camera/57/latent_ref/ch5.png" id="image1-05" x="3.7065952" y="-51.559986" />
+    <image width="14.031599" height="13.503855" preserveAspectRatio="none" xlink:href="latents/veach/move_camera/57/latent_ref/ch14.png" id="image1-3" x="3.7065952" y="-38.056145" />
+    <image width="28.063192" height="27.007698" preserveAspectRatio="none" xlink:href="runs/veach/move_camera/57/post_ambient.png" id="image1-23" x="17.738178" y="-110.6183" />
+    <image width="14.031579" height="13.50383" preserveAspectRatio="none" xlink:href="latents/veach/move_camera/57/refined/ch5.png" id="image1-03" x="3.7066" y="-81.089149" />
+    <image width="14.031593" height="13.503848" preserveAspectRatio="none" xlink:href="latents/veach/move_camera/57/refined/ch14.png" id="image1-576" x="3.7066" y="-67.585304" />
+    <image width="14.031579" height="13.503844" preserveAspectRatio="none" xlink:href="latents/veach/move_camera/57/latent_postambient/ch5.png" id="image1-7" x="3.7066" y="-110.6183" />
+    <image width="14.031592" height="13.503846" preserveAspectRatio="none" xlink:href="latents/veach/move_camera/57/latent_postambient/ch14.png" id="image1-55" x="3.7066" y="-97.114456" />
+    <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.87684px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" x="98.993919" y="2.5979877" id="text118-5-2-2-7-66" transform="matrix(0,-0.98101433,1.0193531,0,0,0)"><tspan sodipodi:role="line" x="98.993919" y="2.5979877" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.87684px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" id="tspan11-6-4-7-5-9">Rendering</tspan></text>
+    <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.87684px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" x="68.893295" y="2.5979877" id="text118-5-2-2-7-66-6" transform="matrix(0,-0.98101433,1.0193531,0,0,0)"><tspan sodipodi:role="line" x="68.893295" y="2.5979877" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.87684px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" id="tspan11-6-4-7-5-9-8">Refinement</tspan></text>
+    <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.87684px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" x="38.792625" y="2.5979831" id="text118-5-2-2-7-66-6-3" transform="matrix(0,-0.98101433,1.0193531,0,0,0)"><tspan sodipodi:role="line" x="38.792625" y="2.5979831" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.87684px;line-height:normal;font-family:'Nimbus Roman';-inkscape-font-specification:'Nimbus Roman Bold';text-align:center;text-decoration-color:#000000;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.203871;stroke-linejoin:round;stroke-miterlimit:10" id="tspan11-6-4-7-5-9-8-6">Reference</tspan></text>
+  </g>
+</svg>

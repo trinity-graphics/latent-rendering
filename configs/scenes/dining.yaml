@@ -1,0 +1,14 @@
+scene_file: ./scenes/dining-room/scene_diffuse.xml
+max_depth: 65
+
+# Camera
+camera_max_y: 60
+# Light
+light_arg: sphere_emitter
+light_max_z: -4
+# Object
+object_arg: Ceramic_0005
+object_min_x: -1.5
+object_max_x: 1.5
+object_min_z: -0.75
+object_max_z: 0.75

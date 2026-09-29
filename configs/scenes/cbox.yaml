@@ -1,0 +1,17 @@
+scene_file: ./scenes/cbox_specular.xml
+max_depth: 4
+duplicate_bsdfs: true
+
+lr_max: 0.005
+
+# Camera
+camera_min_x: -15
+camera_max_x: 15
+# Light
+light_arg: light
+light_min_x: -0.4
+light_max_x: 0.4
+# Object
+object_arg: glasssphere
+object_max_x: -1
+object_max_y: 4.5

@@ -1,0 +1,15 @@
+# This is a config for rapid testing.  Use the files at configs/runs/* to reproduce results from the paper.
+# Better yet, use our helper scripts at scripts/ to automatically reproduce the results.
+__import__: [base.yaml, scenes/cbox.yaml]
+out_dir: ./test/default
+experiments: [move_camera]
+
+num_its: 100
+image_resolution: 512
+samples_per_pixel: 64
+samples_per_pixel_latents: 64
+samples_per_pixel_latents_training: 16
+samples_per_pixel_aovs: 16
+
+debug_metric_steps: 10
+debug_image_steps: 25

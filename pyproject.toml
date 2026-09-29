@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "latentrender"
+description = "Implementation of the paper Physically Based Rendering in the Latent Space."
+readme = "README.md"
+version = "0.1.0"
+requires-python = ">=3.10, <3.13"
+dependencies = [
+    # PyTorch
+    "torch",
+    "torchvision",
+    "torchaudio",
+
+    # Losses
+    "lpips",
+    "fused-ssim",
+    "flip-evaluator",
+
+    # HuggingFace
+    "accelerate",
+    "diffusers",
+    "transformers",
+    "peft",
+    "hf_xet",
+
+    # Rendering & Processing
+    "mitsuba",
+    "drjit",
+    "scikit-image",
+    "kornia",
+
+    # Training Management
+    "h5py",
+    "tqdm",
+    "wandb",
+
+    # Analysis
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "pyexr",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv]
+no-build-isolation-package = ["fused-ssim"]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu128" }]
+torchvision = [{ index = "pytorch-cu128" }]
+torchaudio = [{ index = "pytorch-cu128" }]
+fused-ssim = { git = "https://github.com/rahul-goel/fused-ssim" }
+mitsuba = { path = "mitsuba3-latent", editable = true }
+drjit = { path = "mitsuba3-latent/ext/drjit", editable=true }
