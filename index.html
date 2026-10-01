@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="We introduce latent rendering, an image synthesis paradigm that leverages light transport simulation to directly render latent
+representations of autoencoders">
+  <meta name="keywords" content="Latent Rendering, Latents, Latent Space, VAE, VAEs, Variational Autoencoders, Physically Based Rendering, Path Tracing">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Physically Based Rendering in the Latent Space</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Physically Based Rendering<br>in the Latent Space</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://orcid.org/0009-0008-9271-9149">Vuk Radovanovic</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://orcid.org/0009-0005-3201-9827">Vishesh Gupta</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://profs.etsmtl.ca/agruson/">Adrien Gruson</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://sonhua.github.io/">Binh-Son Hua</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Trinity College Dublin,</span>
+            <span class="author-block"><sup>2</sup>École de Technologie Supérieure (ÉTS)</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2609.21054"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2609.21054"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/C7iy-7N7dNY"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/trinity-graphics/latent-rendering"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-widescreen">
+    <div class="hero-body">
+      <video autoplay muted loop playsinline width="100%" style="display: block;"
+             poster="./static/images/teaser.webp"
+             aria-label="Latent maps and decoded images of a room with a floor lamp and a glass egg: the training view, and an edited variant with the lamp shortened and the egg shifted, next to the ground truth.">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle is-6 has-text-centered mt-3">
+        Our method takes a single rendering of a 3D scene, encodes it into the latent space of a
+        pretrained autoencoder, and trains our modified renderer to reproduce those latents. This
+        allows us to render directly into latent space under new camera, lighting, and object
+        configurations.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Image diffusion models have shown impressive image generation capabilities but are often
+            hard to control, in contrast to classical computer graphics pipelines such as physically
+            based rendering. However, we observe that there is a bridge between light transport
+            phenomena and the distribution of latent space values produced by such models. Thus, we
+            introduce physically based rendering in the feature space learned by the variational
+            autoencoders in generative models, enabling light transport simulation in the latent
+            space. This allows us to leverage physically based rendering techniques to output latent
+            maps for physically guided content generation.
+          </p>
+          <p>
+            We propose modifications to the rendering equation, which, when paired with a
+            differentiable renderer, can yield an optimal set of scene parameters that require only
+            minimal refinement to accurately render into the pretrained latent space. We train our
+            method on a single rendered image, and then demonstrate the generalization of the method
+            to scene geometry changes, lighting changes, and camera view changes.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <!-- Method. -->
+      <img src="./static/images/pipeline.webp"
+           alt="Pipeline: an RGB image is encoded to reference latents; latent scene parameters are optimized with differentiable latent path tracing, refined by a latent refiner, and decoded to RGB."
+           style="width: 100%; display: block;"/>
+      <div class="columns is-centered mt-2">
+        <div class="column is-four-fifths">
+          <p class="has-text-justified">
+            <b>Method overview.</b> A differentiable renderer with a modified <i>signed</i> rendering
+            equation is optimized to reproduce the encoded latents of a single view. A lightweight
+            refiner then cleans up the rendered latents, mostly along edges, before the VAE decoder
+            produces the final image.
+          </p>
+        </div>
+      </div>
+      <!--/ Method. -->
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube-nocookie.com/embed/C7iy-7N7dNY"
+                  title="Physically Based Rendering in the Latent Space"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Latent Space Analysis. -->
+    <div class="columns is-vcentered">
+      <div class="column">
+        <h2 class="title is-3">Latent Space Analysis</h2>
+        <div class="content has-text-justified">
+          <p>
+            We observe behaviors that are common across the latents of many renderings, and that
+            hold even when the scene is edited or changed. Many mirror the RGB image, such
+            as distinct materials and reflections. However, some effects cannot be produced by a
+            conventional path tracer: <b>(A)</b> emitted light is signed, <b>(B)</b> geometric edges
+            are strongly highlighted, and <b>(C)</b> occluded regions can carry positive or negative
+            energy, sometimes exceeding their unoccluded surroundings.
+            <em>Our method is designed to address these behaviors.</em>
+          </p>
+        </div>
+      </div>
+      <div class="column is-5">
+        <figure class="has-text-centered">
+          <img src="./static/images/latent_analysis.webp"
+               alt="The 16 latent channels of a Cornell Box rendering, with zoom-ins on signed emitters, geometric edges, and signed shadows."
+               style="width: 100%;"/>
+          <figcaption class="is-size-6">
+            Green is positive, red is negative, fading to black near zero.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <!--/ Latent Space Analysis. -->
+
+    <!-- Results. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Results</h2>
+        <div class="columns is-mobile is-gapless has-text-centered has-text-weight-bold mb-1">
+          <div class="column">Rendered (pre-refinement)</div>
+          <div class="column">Ours (refined)</div>
+          <div class="column">Ground truth</div>
+        </div>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="./static/videos/living_move_camera.mp4"
+                  type="video/mp4">
+        </video>
+        <p class="has-text-centered mt-2">
+          <b>Camera motion in the Living Room, trained on a single view.</b> The rendered latents
+          capture lighting, shading, and color, while the refiner sharpens high-frequency detail.
+        </p>
+      </div>
+    </div>
+    <!--/ Results. -->
+  </div>
+</section>
+
+
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- Result Explorer. -->
+      <div class="content has-text-centered">
+        <p>
+          Pick a scene and an edit from the menus, then drag the slider to step through it. Each
+          edit opens on its training view.
+        </p>
+      </div>
+      <div class="field is-grouped is-grouped-centered">
+        <div class="control">
+          <div class="select">
+            <select id="explorer-scene" aria-label="Scene">
+              <option value="cbox">Cornell Box</option>
+              <option value="lamp">Lamp</option>
+              <option value="veach">Veach-Bidir</option>
+              <option value="dining">Dining Room</option>
+              <option value="living">Living Room</option>
+            </select>
+          </div>
+        </div>
+        <div class="control">
+          <div class="select">
+            <select id="explorer-case" aria-label="Edit">
+              <option value="move_camera">Camera motion</option>
+              <option value="move_object">Object motion</option>
+              <option value="move_light">Light motion</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-mobile is-gapless has-text-centered has-text-weight-bold mb-1">
+        <div class="column">Ours (refined)</div>
+        <div class="column">Ground truth (path traced)</div>
+      </div>
+      <img id="explorer-image" width="1536" height="768"
+           alt="Our refined rendering (left) next to the path-traced ground truth (right)."
+           style="width: 100%; height: auto; display: block;"/>
+      <input class="slider is-fullwidth is-large is-info"
+             id="explorer-slider" aria-label="Frame"
+             step="1" min="0" max="59" value="0" type="range">
+      <p class="has-text-centered" id="explorer-frame"></p>
+      <!--/ Result Explorer. -->
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Applications. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Application: Text-Guided Editing</h2>
+        <div class="content has-text-justified">
+          <p>
+            Because our renderer outputs latents, it connects a 3D scene directly to a diffusion
+            model for uses such as score distillation sampling (SDS). We skip the cost of encoding a
+            full-resolution image, and gradients flow straight back into the latent scene
+            parameters. Here, we recolor the teapot by optimizing its reflectance with the prompt
+            <i>"a &lang;color&rang; teapot and a lamp on a table"</i>.
+          </p>
+        </div>
+        <table class="sds-table">
+          <thead>
+            <tr><th>Original</th><th>Blue</th><th>Brown</th><th>Green</th><th>Pink</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="4"><img src="./static/images/sds/original_rgb.webp" alt="Original Lamp scene with a red teapot."/></td>
+              <th colspan="4">SDS with RGB rendering + encoder</th>
+            </tr>
+            <tr>
+              <td><img src="./static/images/sds/rgb_blue.webp" alt="Blue teapot, RGB rendering + encoder."/></td>
+              <td><img src="./static/images/sds/rgb_brown.webp" alt="Brown teapot, RGB rendering + encoder."/></td>
+              <td><img src="./static/images/sds/rgb_green.webp" alt="Green teapot, RGB rendering + encoder."/></td>
+              <td><img src="./static/images/sds/rgb_pink.webp" alt="Pink teapot, RGB rendering + encoder."/></td>
+            </tr>
+            <tr>
+              <th colspan="4">SDS with latent rendering (ours)</th>
+            </tr>
+            <tr>
+              <td><img src="./static/images/sds/latent_blue.webp" alt="Blue teapot, latent rendering."/></td>
+              <td><img src="./static/images/sds/latent_brown.webp" alt="Brown teapot, latent rendering."/></td>
+              <td><img src="./static/images/sds/latent_green.webp" alt="Green teapot, latent rendering."/></td>
+              <td><img src="./static/images/sds/latent_pink.webp" alt="Pink teapot, latent rendering."/></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!--/ Applications. -->
+
+    <!-- Related Links. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Related Links</h2>
+
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              <a href="https://arxiv.org/abs/2211.07600">Latent-NeRF</a> renders a NeRF into a
+              diffusion model's latent space for text-to-3D generation.
+            </li>
+            <li>
+              <a href="https://arxiv.org/abs/2512.09923">Splatent</a> reconstructs 3D Gaussian
+              splats in the latent space of a VAE.
+            </li>
+            <li>
+              <a href="https://dreamfusion3d.github.io/">DreamFusion</a> introduced the score
+              distillation sampling used in our editing application.
+            </li>
+            <li>
+              <a href="https://www.mitsuba-renderer.org/">Mitsuba 3</a> is the differentiable
+              renderer we extend for signed, 16-channel latent rendering.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--/ Related Links. -->
+
+    <!-- Acknowledgements. -->
+    <div class="columns is-centered" id="Acknowledgements">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Acknowledgements</h2>
+        <div class="content">
+          <p>
+            Scenes are from <a href="https://benedikt-bitterli.me/resources/">Benedikt Bitterli's
+            rendering resources</a>, via the Mitsuba 3 gallery; license information is available at
+            the link.
+          </p>
+          <p>
+            This project is supported by Research Ireland under the Research Ireland Frontiers for the
+            Future Programme - Project, award number 22/FFP-P/11522.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Acknowledgements. -->
+
+    <!-- BibTeX. -->
+    <div class="columns is-centered" id="BibTeX">
+      <div class="column is-full-width">
+        <h2 class="title is-3">BibTeX</h2>
+        <div class="content">
+          <pre><code>@article{radovanovic2026latent,
+  author  = {Radovanovic, Vuk and Gupta, Vishesh and Gruson, Adrien and Hua, Binh-Son},
+  title   = {Physically Based Rendering in the Latent Space},
+  journal = {Computer Graphics Forum},
+  year    = {2026},
+  doi     = {10.1111/cgf.70633},
+  note    = {To appear},
+}</code></pre>
+        </div>
+      </div>
+    </div>
+    <!--/ BibTeX. -->
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/pdf/2609.21054">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link external-link" href="https://github.com/trinity-graphics/latent-rendering">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website is adapted from the <a href="https://nerfies.github.io/">Nerfies</a>
+            project page (<a href="https://github.com/nerfies/nerfies.github.io">source code</a>).
+            You are free to borrow it too; we just ask that you link back to Nerfies in the footer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
